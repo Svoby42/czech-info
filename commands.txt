@@ -1,0 +1,1 @@
+grep -vE 'Apache2|RouterOS|IIS|403|404|500|503|Not Found' result.txt | wc -l
