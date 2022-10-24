@@ -1,1 +1,2 @@
 grep -vE 'Apache2|RouterOS|IIS|403|404|500|503|Not Found' result.txt | wc -l
+grep -vE "RouterOS|ISS|Not Found|Apache2|\b([4-5][0-9][1-9])\b" | wc -l #better one
