@@ -16,7 +16,7 @@ f.each_with_index { |line, index|
   if html_result.include?("XHTML")
     old_tech += "XHTML "
   end
-  unless html_result.include?("!DOCTYPE html") || html_result.include?("!doctype html")
+  unless html_result.include?("!DOCTYPE html") || html_result.include?("!doctype html") || html_result.include?("!DOCTYPE HTML")
     old_tech += "Missing doctype "
   end
   old_tech = old_tech.chomp

@@ -2,4 +2,10 @@ grep -vE 'Apache2|RouterOS|IIS|403|404|500|503|Not Found' result.txt | wc -l
 #better one
 grep -vE "RouterOS|ISS|Not Found|Apache2|\b([4-5][0-9][1-9])\b" result.txt | wc -l
 #the best
-grep -vE "RouterOS|IIS|Not Found|Forbidden|ERROR|Apache2|nginx|\b([4-5][0-9][0-9])\b" result.txt | wc -l
+grep -vE "RouterOS|IIS|Not Found|Forbidden|ERROR|Apache2|Apache|Roundcube|phpMyAdmin|Login|nginx|\b([4-5][0-9][0-9])\b" result.txt > filtered_pages_info.txt
+
+# http
+sudo masscan -p80 $(cat czech_ips.txt) > ips80.txt --rate 250
+
+# ruby on rails
+sudo masscan -p3000 $(cat czech_ips.txt) > ips3000.txt --rate 250
