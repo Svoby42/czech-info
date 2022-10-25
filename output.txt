@@ -1,5 +1,0 @@
-17:45:55, tcp, ssh, None, ssh://95.168.200.164:22, SSH-2.0-OpenSSH_7.9p1\x20Debian-10+deb10u2
-17:45:59, tcp, http, [400] [Nginx], http://95.168.200.164:443, 400 The plain HTTP request was sent to HTTPS port
-17:46:02, tcp, http, [200] [Nginx], http://95.168.200.164:80, SH.cz - factcool-www2
-17:46:26, tcp, , None, 95.168.200.164:9090, 
-17:46:41, tls, https, [301] [Nginx], https://95.168.200.164:443/, Značkové oblečenie a topánky pre ženy a mužov | Oblečenie Factcool
